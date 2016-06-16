@@ -71,7 +71,7 @@ int main()
 
 	//UDP
 	//how many bytes were successfully sent
-	int out_Byte = sendto(handle, out_buffer, 15, 0, (sockaddr*)&out_addr, sizeof(sockaddr_in)); //address data
+	int out_Byte = sendto(handle, out_buffer, 40, 0, (sockaddr*)&out_addr, sizeof(sockaddr_in)); //address data
 	//how many bytes were successfully recieved
 	int in_Byte = recvfrom(handle, in_buffer, 40, 0, (sockaddr*)&in_addr, &in_len); // recieves ANY packet in this sockets address (port)
 
